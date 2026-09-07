@@ -39,21 +39,28 @@ export async function POST(request: Request) {
       createdAt: new Date().toISOString(),
     };
 
-    await mkdir(dataDir, { recursive: true });
-    let current: RSVPRecord[] = [];
     try {
-      current = JSON.parse(await readFile(filePath, "utf8")) as RSVPRecord[];
-    } catch {
-      current = [];
-    }
+      await mkdir(dataDir, { recursive: true });
+      let current: RSVPRecord[] = [];
+      try {
+        current = JSON.parse(await readFile(filePath, "utf8")) as RSVPRecord[];
+      } catch {
+        current = [];
+      }
 
-    current.unshift(record);
-    await writeFile(filePath, JSON.stringify(current, null, 2), "utf8");
+      current.unshift(record);
+      await writeFile(filePath, JSON.stringify(current, null, 2), "utf8");
+    } catch (error) {
+      console.error("Local RSVP store unavailable:", error);
+    }
 
     try {
       await sendRSVPToTelegram(record);
     } catch (error) {
       console.error("Telegram RSVP error:", error);
+      if (process.env.VERCEL) {
+        return NextResponse.json({ error: "تعذّر إرسال التأكيد" }, { status: 502 });
+      }
     }
 
     return NextResponse.json(record);
