@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+.env
+.env.local
+src/data/rsvps.json
+src/data/telegram-chat.json
+.preview
+.venv-bg
+.u2net
+tsconfig.tsbuildinfo
