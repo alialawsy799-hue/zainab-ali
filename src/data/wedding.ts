@@ -69,23 +69,23 @@ export type WeddingData = {
 };
 
 export const weddingData: WeddingData = {
-  groomName: "هشام",
-  brideName: "فاطمة",
-  coupleNames: "هشام و فاطمة",
-  initials: "H & F",
+  groomName: "علي",
+  brideName: "زينب",
+  coupleNames: "زينب و علي",
+  initials: "Z & A",
   weddingDate: "2026-09-26",
   weddingDateDisplay: "26 / 09 / 2026",
   weddingDateArabic: "السبت، السادس والعشرون من سبتمبر ٢٠٢٦",
   weddingDateShort: "26.9.2026",
   weddingDay: "السبت",
   weddingTime: "الساعة 4:00 مساءً",
-  location: "نادي الصيد",
-  venueHall: "قاعة بغداد",
-  venueHallEn: "Baghdad Hall",
-  address: "بغداد - المنصور - نادي الصيد",
-  mapsUrl: "https://maps.app.goo.gl/gLk2t9GWY4CdNQdS6",
+  location: "بغداد - السيدية",
+  venueHall: "",
+  venueHallEn: "",
+  address: "بغداد - السيدية",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B3%D9%8A%D8%AF%D9%8A%D8%A9%20%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
   mapsEmbedUrl:
-    "https://maps.google.com/maps?q=%D9%86%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B5%D9%8A%D8%AF%20%D9%82%D8%A7%D8%B9%D8%A9%20%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF%20%D8%A7%D9%84%D9%85%D9%86%D8%B5%D9%88%D8%B1&hl=ar&z=16&output=embed",
+    "https://maps.google.com/maps?q=%D8%A7%D9%84%D8%B3%D9%8A%D8%AF%D9%8A%D8%A9%20%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF&hl=ar&z=14&output=embed",
   invitationMessage:
     "بعض اللحظات لا تكتمل إلا بمن نحب، لأن أجمل الذكريات هي تلك التي تجمعنا بمن نحب، ننتظركم لتعيشوا معنا هذه الليلة.",
   countdownDate: "2026-09-26T16:00:00",
@@ -93,7 +93,7 @@ export const weddingData: WeddingData = {
   musicSrc: "/music/background.wav",
   welcome: {
     heading: "نتشرف بدعوتكم لحظور حفل مهر",
-    names: "فاطمة & هشام",
+    names: "زينب & علي",
     message:
       "بعض اللحظات لا تكتمل إلا بمن نحب،\nلأن أجمل الذكريات هي تلك التي تجمعنا\nبمن نحب، ننتظركم لتعيشوا معنا هذه الليلة.",
   },

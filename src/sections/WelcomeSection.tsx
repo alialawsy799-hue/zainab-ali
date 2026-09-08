@@ -62,7 +62,7 @@ export function WelcomeSection() {
         >
           <Image
             src="/images/welcome-couple.png"
-            alt="فاطمة وهشام"
+            alt="زينب وعلي"
             fill
             sizes="(max-width: 768px) 90vw, 420px"
             className="object-contain object-bottom"

@@ -23,7 +23,9 @@ export function LocationSection() {
         <div className="mt-8 flex flex-col items-center">
           <PinIcon />
           <p className="mt-4 font-serif text-lg leading-9 text-ink sm:text-xl">
-            {weddingData.location} {weddingData.venueHall} — {weddingData.venueHallEn}
+            {weddingData.location}
+            {weddingData.venueHall ? ` ${weddingData.venueHall}` : ""}
+            {weddingData.venueHallEn ? ` — ${weddingData.venueHallEn}` : ""}
           </p>
           <p className="mt-2 font-sans text-sm leading-7 text-mute">{weddingData.address}</p>
         </div>
